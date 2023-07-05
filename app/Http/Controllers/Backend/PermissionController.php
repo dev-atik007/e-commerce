@@ -10,7 +10,7 @@ class PermissionController extends Controller
 {
     public function list(){
         $permissions = Permission::all();
-        return view('backend.permission.list', compact('permissions'));
+        return view('backend.access-control.permission.list', compact('permissions'));
     }
 
     // public function view($id){

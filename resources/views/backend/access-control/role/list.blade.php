@@ -20,8 +20,8 @@
       <td>{{$data->name}}</td>
       <td>{{$data->status}}</td>
       <td>
-            <a href="{{route('role.edit',$data->id)}}" class="btn btn-success">Edit</a>
-            <a href="" class="btn btn-success my-2"> Assign</a>
+            <a href="{{route('role.permission',$data->id)}}" class="btn btn-success my-2"> Assign</a>
+            <a href="{{route('role.edit',$data->id)}}" class="btn btn-info">Edit</a>
             <a href="{{route('role.delete',$data->id)}}" class="btn btn-danger">Delete</a>
           
       </td>

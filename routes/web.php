@@ -35,11 +35,6 @@ Route::post('/user-store', [HomeController::class, 'userStore'])->name('user.sto
 
 
 
-
-
-
-
-
 Route::group(['prefix'=>'admin'],function(){
     //authentication
     Route::get('/login',[DashboardController::class, 'login'])->name('user.login');
@@ -96,7 +91,7 @@ Route::group(['prefix'=>'admin'],function(){
         // Route::put('/permission/update/{id}',[PermissionController::class, 'update'])->name('permission.update');
         // Route::get('/permission/delete/{id}',[PermissionController::class, 'delete'])->name('permission.delete');
         
-        
+        Route::get('/assign-permission/{role_id}', [RoleController::class, 'rolePermission'])->name('role.permission');
 
 
 

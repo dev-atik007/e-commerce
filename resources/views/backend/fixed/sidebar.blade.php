@@ -104,9 +104,7 @@
                     Trannaction
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                 </a>
-                
-                
-
+            
             </div>
         </div>
         <div class="sb-sidenav-footer">
